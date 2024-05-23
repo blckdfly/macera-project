@@ -1,0 +1,345 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antipasto+Pro">
+        <link rel="stylesheet" href="../css/styleHotelMain.css" type="text/css">
+        <title>Macera</title>
+        <link rel="icon" href="../asset/HeaderIcon.svg" type="svg">
+    </head>
+    <body>
+        <!--  Header  -->
+        <div class="header_container poppins bold">
+            
+            <div class="header_macera green bold">
+                <h1>MACERA</h1>
+            </div>
+
+            <div class="header_navbar gray">
+                <ul class="navbar_list">
+                    <a href="/index.html">
+                        <lo class="home">Home</lo>
+                    </a>
+                    <a href="trips.html">
+                        <lo class="trips gray">Trips</lo>
+                    </a>
+                    <a href="hotelMain.html">
+                        <lo class="hotels white">Hotels</lo>
+                    </a>
+                    <a href="shareXperienceTrips.html">
+                        <lo class="shareX gray">ShareXperience</lo>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="header_signin bold">
+                <div class="center_customer">
+                    <a href="customerService.html">
+                        <img src="../asset/CSIcon.svg" alt="customer service">
+                    </a>
+                </div>
+                <div class="sign_in_container" onclick="toLogin()">
+                    <div class="sign_in">
+                        <a href="signIn.html">
+                            Sign In
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  input search  -->
+        
+        <div class="search_container inter">
+            <div class="search_up">
+                <div class="search_left">
+                    <input type="text" placeholder="Going to">
+                </div>
+                <div class="date-input">
+                    <input type="date" placeholder="Check-in">
+                </div> 
+                <div class="date-input">
+                    <input type="date" placeholder="Check-out">
+                </div>
+            </div>
+            <div class="search_down bold">
+                <button>
+                    <span>
+                        Search
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!--  title  -->
+
+        <div class="title_container">
+            <span class="title white bold inter">
+                Hotels
+            </span>
+        </div>
+
+        <!--  Header  -->
+
+        <div class="list_container inter">
+            <div class="hotel_container">
+                <div class="sub_container1 hotel1">
+
+                </div>
+                <div class="sub_container2">
+                    <div class="rating">
+                        <img src="../asset/Ratings.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <span class="name white bold">
+                            Amarterra Nusa Dua
+                        </span>
+                        <span class="sub_text bold">
+                            Kawasan Pariwisata Nusa-Dua BTDC, Resort Area Lot B, Nusa Dua, Bali, 80361
+                        </span>
+                    </div>
+                    <div class="button_hotel">
+                        <a href="hotelDetail.html">
+                            <button class="green">
+                                <span class="select">
+                                    Select Hotel
+                                </span>
+                            </button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_container">
+                <div class="sub_container1 hotel2">
+
+                </div>
+                <div class="sub_container2">
+                    <div class="rating">
+                        <img src="../asset/Ratings.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <span class="name white bold">
+                            The Anvaya Beach Resort 
+                        </span>
+                        <span class="sub_text bold">
+                            Mekar Sari, Praya Barat, Central Lombok, Kuta,
+                            Lombok, Nusa Tenggara Barat, Indonesia, 83572
+                        </span>
+                    </div>
+                    <div class="button_hotel">
+                        <a href="hotelDetail.html">
+                            <button class="green">
+                                <span class="select">
+                                    Select Hotel
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_container">
+                <div class="sub_container1 hotel3">
+
+                </div>
+                <div class="sub_container2">
+                    <div class="rating">
+                        <img src="../asset/Ratings.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <span class="name white bold">
+                            Brits Hotel Legian
+                        </span>
+                        <span class="sub_text bold">
+                            Jl. Dr. Setiabudi No.430 , Ledeng, Kecamatan Cidadap, 
+                            Jawa Barat, Setiabudi, Bandung, Jawa Barat, Indonesia, 40143
+                        </span>
+                    </div>
+                    <div class="button_hotel">
+                        <a href="hotelDetail.html">
+                            <button class="green">
+                                <span class="select">
+                                    Select Hotel
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_container">
+                <div class="sub_container1 hotel4">
+
+                </div>
+                <div class="sub_container2">
+                    <div class="rating">
+                        <img src="../asset/Ratings.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <span class="name white bold">
+                            Courtyard by Marriott
+                        </span>
+                        <span class="sub_text bold">
+                            Mekar Sari, Praya Barat, Central Lombok, Kuta,
+                             Lombok, Nusa Tenggara Barat, Indonesia, 83572
+                        </span>
+                    </div>
+                    <div class="button_hotel">
+                        <a href="hotelDetail.html">
+                            <button class="green">
+                                <span class="select">
+                                    Select Hotel
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_container">
+                <div class="sub_container1 hotel5">
+
+                </div>
+                <div class="sub_container2">
+                    <div class="rating">
+                        <img src="../asset/Ratings.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <span class="name white bold">
+                            Fairfield by Marriott
+                        </span>
+                        <span class="sub_text bold">
+                            Jl. Dr. Setiabudi No.430 , Ledeng, Kecamatan Cidadap, Jawa Barat, 
+                            Setiabudi, Bandung, Jawa Barat, Indonesia, 40143
+                        </span>
+                    </div>
+                    <div class="button_hotel">
+                        <a href="hotelDetail.html">
+                            <button class="green">
+                                <span class="select">
+                                    Select Hotel
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_container">
+                <div class="sub_container1 hotel6">
+
+                </div>
+                <div class="sub_container2">
+                    <div class="rating">
+                        <img src="../asset/Ratings.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <span class="name white bold">
+                            The Sun Hotel & Spa
+                        </span>
+                        <span class="sub_text bold">
+                            Mekar Sari, Praya Barat, Central Lombok, Kuta, Lombok, 
+                            Nusa Tenggara Barat, Indonesia, 83572
+                        </span>
+                    </div>
+                    <div class="button_hotel">
+                        <a href="hotelDetail.html">
+                            <button class="green">
+                                <span class="select">
+                                    Select Hotel
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_container">
+                <div class="sub_container1 hotel7">
+
+                </div>
+                <div class="sub_container2">
+                    <div class="rating">
+                        <img src="../asset/Ratings.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <span class="name white bold">
+                            Lv8 Resort Hotel
+                        </span>
+                        <span class="sub_text bold">
+                            Jl. Dr. Setiabudi No.430 , Ledeng, Kecamatan Cidadap,
+                            Jawa Barat, Setiabudi, Bandung, Jawa Barat, Indonesia, 40143
+                        </span>
+                    </div>
+                    <div class="button_hotel">
+                        <a href="hotelDetail.html">
+                            <button class="green">
+                                <span class="select">
+                                    Select Hotel
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--  Footer  -->
+
+         <div class="footer_container">
+            <div class="footer_subcontainer1">
+                <div class="footer_macera bold green poppins">
+                    MACERA
+                </div>
+                <div class="footer_content white inter">
+                    At Macera, we are passionate about making your travel dreams come true. Our mission is to provide exceptional travel experiences that are personalized, enriching, and unforgettable. Join us on a journey to explore the world's most beautiful places and create memories that will last a lifetime.
+                </div>
+            </div>
+            <div class="footer_subcontainer2 inter">
+                <div class="footer_subcontainer2_up">
+                    <div class="footer_info">
+                        <span class="info white bold">INFO</span><br>
+                        <span class="info_down white">
+                            PRODUCT <br>
+                            PRICING <br>
+                            BLOG
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">CONTACT</span><br>
+                        <span class="info_down white">
+                            VISIT <br>
+                            CALL <br>
+                            EMAIL
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">SUPPORT</span><br>
+                        <span class="info_down white">
+                            HELP <br>
+                            STATUS <br>
+                            FAQ
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">NEWS</span><br>
+                        <span class="info_down white">
+                            EMAIL <br>
+                            LINKEDIN <br>
+                            TWITTER
+                        </span>
+                    </div>
+                </div>
+                <div class="footer_subcontainer2_down">
+                    <img src="../asset/FooterCopyright.svg" alt="copyright">
+                </div>
+            </div>
+         </div>
+         
+    </body>
+</html>

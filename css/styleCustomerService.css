@@ -1,0 +1,211 @@
+/* global element */
+body{
+    background-color: #111B24;
+    display: flex;
+}
+.bold{
+    font-weight: 1000;
+}
+.poppins{
+    font-family: 'Poppins',sans-serif;
+}
+.inter{
+    font-family: 'Inter',sans-serif;
+}
+.white{
+    color: white;
+}
+.green{
+    color: #00EAC7;
+    ;
+}
+.gray{
+    color: #727272E5;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@font-face {
+    font-family: 'Ravensara Antiqua';
+    src: url(../fonts/RavensaraAntiquaStencil-Bold.ttf);
+}
+
+
+/* header */
+.header_container{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid white;
+    height: 15vh;
+    background-color: #111B24;
+
+    z-index: 10;
+}
+    .header_macera{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        flex-basis: 20%;
+        margin-left: 4vw;
+        margin-top: vw;
+        font-family: 'Ravensara Antiqua', sans-serif ;
+        font-weight: bolder;
+        font-size: 30px;
+        color: #00EAC7;
+    }
+    .header_navbar{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+        justify-content: center;
+
+        text-align: center;
+        
+    }
+        .navbar_list{
+            display: flex;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .home,.trips,.hotels,.shareX{
+            margin-left: 3vw;
+            margin-right: 3vw;
+            font-size: 1.6vw;
+            text-align: center;
+        }
+            .home{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .trips{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .hotels{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .shareX{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+    .header_signin{
+        display: flex;
+        justify-content: center;
+        flex-basis: 25%;
+    }
+        .center_customer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 30%;
+        }
+            .header_signin img{
+                width: 5vw;
+                height: 5vh;
+            }
+        .sign_in_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #00EAC7;
+            flex-basis: 70%;
+            cursor: pointer;
+           
+            margin-top: 4vh;
+            margin-bottom: 4.5vh;
+            margin-right: 4vw;
+            border-radius: 1vw;
+        }
+            .sign_in{
+                font-size: 1.6vw;
+            }
+
+/*  main container  */
+.main_container{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 20vh;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+    .chat_cover{
+        display: flex;
+        flex-direction: column;
+        background-color: #0F3236;
+        height: 80vh;
+        width: 70vw;
+        border-radius: 2vw;
+    }
+        .chat{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 85%;
+            color: black;
+            margin-left: 3vw;
+            margin-right: 3vw;
+            margin-top: 1vh;
+        }
+            .title{
+                text-align: center;
+                flex-basis: 10%;
+                font-size: 2vw;
+                margin-bottom: 1vh;
+            }
+            .satu,.dua,.tiga,.empat,.lima{
+                display: flex;
+            }
+            .satu,.lima{
+                flex-direction: row-reverse;
+            }
+            .satu,.dua{
+                flex-basis: 22.5%;
+            }
+            .tiga,.empat{
+                flex-basis: 10%;
+            }
+            .lima{
+                flex-basis: 25%;
+            }
+                .kanan,.kiri{
+                    background-color: #00EAC7;
+                    flex-basis: 40%;
+                    margin: 0.5vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 1vw;
+                }
+                    .center{
+                        margin: 0.5vw;
+                        font-size: 1.2vw;
+                    }
+        .type{
+            display: flex;
+            flex-basis: 15%;
+            border-top: 1px solid white;
+            justify-content: start;
+            align-items: center;
+        }
+            input{
+                flex-basis: 100%;
+                font-size: larger;
+                text-indent: 3vw;
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+            }
+            input::placeholder{
+                color: #7B7B7B;
+                border: transparent;
+            }

@@ -1,0 +1,594 @@
+/* global element */
+body{
+    background-color: #111B24;
+}
+.bold{
+    font-weight: 1000;
+}
+.poppins{
+    font-family: 'Poppins',sans-serif;
+}
+.inter{
+    font-family: 'Inter',sans-serif;
+}
+.white{
+    color: white;
+}
+.green{
+    color: #00EAC7;
+    ;
+}
+.gray{
+    color: #727272E5;
+}
+.italic{
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@font-face {
+    font-family: 'Ravensara Antiqua';
+    src: url(../fonts/RavensaraAntiquaStencil-Bold.ttf);
+}
+
+/*  layout control */
+.hidden1,.hidden2{
+    display: none;
+}
+
+/* header */
+.header_container{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    
+    height: 15vh;
+    background-color: #111B24;
+
+    z-index: 10;
+}
+    .header_macera{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        flex-basis: 20%;
+        margin-left: 4vw;
+        margin-top: vw;
+        font-family: 'Ravensara Antiqua', sans-serif ;
+        font-weight: bolder;
+        font-size: 30px;
+        color: #00EAC7;
+    }
+    .header_navbar{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+        justify-content: center;
+
+        text-align: center;
+        
+    }
+        .navbar_list{
+            display: flex;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .home,.trips,.hotels,.shareX{
+            margin-left: 3vw;
+            margin-right: 3vw;
+            font-size: 1.6vw;
+            text-align: center;
+        }
+            .home{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .trips{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .hotels{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .shareX{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+    .header_signin{
+        display: flex;
+        justify-content: center;
+        flex-basis: 25%;
+    }
+        .center_customer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 30%;
+        }
+            .header_signin img{
+                width: 5vw;
+                height: 5vh;
+            }
+        .sign_in_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #00EAC7;
+            flex-basis: 70%;
+            cursor: pointer;
+           
+            margin-top: 4vh;
+            margin-bottom: 4.5vh;
+            margin-right: 4vw;
+            border-radius: 1vw;
+        }
+            .sign_in{
+                font-size: 1.6vw;
+            }
+
+/*  enjoy container */
+.enjoy_container{
+    display: flex;
+    margin-top: 20vh;
+    height: 80vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 10vh;
+
+    background-image: url("../asset/Blur.svg");
+    background-repeat: no-repeat;
+    background-position: 70% center;
+    background-size: 40% auto;
+}
+    .enjoy_left{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        justify-content: center;
+    }
+        .enjoy_title{
+            display: flex;
+            flex-direction: column;
+        }
+            .life_short{
+                font-size: 1.8vw;
+                margin-bottom: 1vw;
+            }
+            .enjoy_trips{
+                font-size: 3.1vw;
+                font-weight: 800;
+            }
+
+    .enjoy_right{
+        display: flex;
+        flex-basis: 40%;
+        justify-content: center;
+    }
+        .enjoy_right img{
+            height: auto;
+            width: auto;
+        }
+
+/*  input   */
+.input_container{
+    margin-top: 5vh;
+    height: 20vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 10vh;
+    flex-direction: column;
+} 
+    .input_top{
+        display: flex;
+        flex-direction: row;
+        background-color: #0F3236;
+        border-radius: 1.2vw;
+        padding: 2vw;
+    }
+        .input_left,.input_mid,.input_right{
+            display: flex;
+            flex-basis: 33.33%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1vh;
+            margin-top: 1vh;
+        }
+        .input_left label{
+            display: block;
+            margin-right: 2vw;
+            background-color: transparent;
+        }
+        .input_left select {
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            appearance: none;
+            color:#00EAC7;
+            font-size: 1.5vw;
+        }
+        .input_left select:focus{
+            background-color:#0F3236;
+            outline: none;
+        }
+        .input_mid label{
+            display: block;
+            margin-right: 2vw;
+            background-color: transparent;
+        }
+        .input_mid input[type="date"] {
+            border: none;
+            font-size: 1.5vw;
+            background-color: transparent;
+            color:#00EAC7;
+            outline: none;
+            margin-left: 2.5vw;
+        }
+        .input_mid input[type="date"]::-webkit-inner-spin-button,
+        .input_mid input[type="date"]::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+        .input_right{
+            position: relative;
+        }
+        .input_right label{
+            position: absolute;
+            display: block;
+            margin-right: 1vw;
+            background-color: transparent;
+            font-size: 1.5vw;
+            margin-left: 3vw;
+            margin-top: 0.1vw;
+        }
+        .input_right input {
+            margin-left: 5vw;
+            margin-top: 5px;
+            font-size: 1.5vw;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #00EAC7;
+        }
+        .input_mid{
+            border-left: 0.15vw solid #898989;
+            border-right: 0.15vw solid #898989;
+        }
+    .input_bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+    }
+        .search{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #00EAC7;
+            width: 32vw;
+            height: 7vh;
+            border-radius: 1vw;
+            border: transparent;
+            cursor: pointer;
+            font-size: 1.5vw;
+            color: #07343D;
+        }
+        .search:hover{
+            border: 0.1vw solid #00EAC7;
+            background-color: #111B24;
+            color: #00EAC7;
+        }
+            
+/*  most visited place  */
+
+.visited_container{
+    display: flex;
+    margin-top: 1vh;
+    height: 170vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 5vh;
+    flex-direction: column;
+}
+    .visited_title{
+        display: flex;
+        flex-basis: 10%;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5vw;
+        margin-bottom: 1vh;
+        margin-top: 8vh;
+    }
+    .visited_content{
+        display: flex;
+        flex-basis: 90%;
+        flex-direction: column;
+    }
+        .visited_split{
+            display: flex;
+            flex-basis: 50%;
+        }
+            .container_spot{
+                display: flex;
+                flex-basis: 33.33%;
+                margin: 2vw;
+                background-color: #0F3236;
+                border-radius: 1.5vw;
+                flex-direction: column;
+            }
+                .spot_img{
+                    flex-basis: 55%;
+
+                    background-image: url("../asset/LabuanBajo.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    margin: 1.1vw;
+                    border-radius: 1.5vw;
+                }
+                .raja-ampat{
+                    flex-basis: 55%;
+
+                    background-image: url("../asset/RajaAmpat.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    margin: 1.1vw;
+                    border-radius: 1.5vw;
+                }
+                .tual{
+                    flex-basis: 55%;
+
+                    background-image: url("../asset/Tual.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    margin: 1.1vw;
+                    border-radius: 1.5vw;
+                }
+                .sentani{
+                    flex-basis: 55%;
+
+                    background-image: url("../asset/DanauSentani.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    margin: 1.1vw;
+                    border-radius: 1.5vw;
+                }
+                .nusa-penida{
+                    flex-basis: 55%;
+
+                    background-image: url("../asset/NusaPenida.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    margin: 1.1vw;
+                    border-radius: 1.5vw;
+                }
+                .mereseHills{
+                    flex-basis: 55%;
+
+                    background-image: url("../asset/MereseHills.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    margin: 1.1vw;
+                    border-radius: 1.5vw;
+                }
+                .spot_img_info{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 1.1vw;
+                    margin-right: 1.1vw;
+                    margin-bottom: 2vh;
+                    flex-basis: 45%;
+                }
+                    .rating{
+                        display: flex;
+                        flex-direction: row;
+                        flex-basis: 30%;
+                        align-items: center;
+                    }
+                        .rating img{
+                            width: 9vw;
+                            height: 3vh;
+                        }
+                        .beach_tag{
+                            display: flex;
+                            background-color: #111B24;
+                            border-radius: 0.5vw;
+                        }
+                            .beach{
+                                margin-top: 0.5vh;
+                                margin-bottom: 0.5vh;
+                                margin-left: 1vw;
+                                margin-right: 1vw;
+                                font-size: 1.1vw;
+                            }
+
+                    .img_title{
+                        display: flex;
+                        font-size: 2.4vw;
+                        flex-basis: 40%;
+                    }
+                    .book_now_button{
+                        display: flex;
+                        flex-basis: 30%;
+                        justify-content: center;
+                    }
+                        .button_left,.button_right{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-basis: 50%;
+                        }
+                            .book_now,.view_detail{
+                                border: transparent;
+                                display: flex;
+                                align-items: center;
+                            }
+                            .book_now{
+                                background-color: #111B24;
+                                border-radius: 0.7vw;
+                                cursor: pointer;
+                            }
+                            .view_detail{
+                                background-color: transparent;
+                                cursor: pointer;
+                            }
+                                .book{
+                                    margin-left: 2vw;
+                                    margin-right: 2vw;
+                                    margin-top: 1vh;
+                                    margin-bottom: 1vh;
+                                    font-size: 1.1vw;
+                                    
+                                }
+/*  about this area */
+
+.about_area_container{
+    position: fixed;
+    
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    background-color: #0F3236;
+    border-radius: 4vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+}
+    .about_left{
+        flex-basis: 45%;
+        background-image: url("../asset/DetailsImage.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4vw 0 0 4vw;
+    }
+    .about_right{
+        display: flex;
+        flex-basis: 55%;
+        flex-direction: column;
+        margin: 2vw;
+    }
+        .about_title{
+            display: flex;
+            flex-basis: 20%;
+            flex-direction: column;
+            line-height: 1;
+            margin-bottom: 2vh;
+        }  
+            .title_up{
+                font-size: 1.5vw;
+            }
+            .title_down{
+                font-size: 4vw;
+            }
+        .about_content{
+            display: flex;
+            flex-basis: 30%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .about_content span{
+                font-size: 1.4vw;
+            }
+        .about_detail{
+            display: flex;
+            flex-basis: 50%;
+        }
+            .about_split{
+                display: flex;
+                flex-basis: 50%;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.8;
+                font-size: 1.1vw;
+            }
+                .komodo_island{
+                    font-weight: 200;
+                }
+
+/* footer */
+
+.footer_container{
+    display: flex;
+    margin-top: 10vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 10vh;
+}
+    .footer_subcontainer1,.footer_subcontainer2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer_subcontainer1{
+        flex-basis: 40%;
+        text-align: start;
+        margin-right: 5vw;
+    }
+        .footer_macera{
+            font-size: 5vw;
+            font-family: 'Ravensara Antiqua',sans-serifs;
+            margin-bottom: 1.8vw;
+        }
+        .footer_content{
+            font-size: 1.3vw;
+        }
+    .footer_subcontainer2{
+        flex-basis: 60%;
+    }
+        .footer_subcontainer2_up{
+            display: flex;
+            flex-direction: row;
+        }
+            .footer_info{
+                display: flex;
+                flex-direction: column;
+                line-height: 1;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                flex-basis: 25%;
+                margin-top: 5vh;
+            }
+                .info{
+                    font-size: 1.5vw;
+                }
+                .info_down{
+                    font-size: 1.1vw;
+                    line-height: 2;
+                    font-weight: lighter;
+                }
+
+        .footer_subcontainer2_down{
+            display: flex;
+            margin-left: 2vw;
+        }
+            img[alt="copyright"]{
+                width: 25vw;
+                height: 2vw;
+                margin-top: 1.8vw;
+            }

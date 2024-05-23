@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+            
+            <link rel="stylesheet" href="../css/styleReviewTrips.css" type="text/css">
+            <title>Macera</title>
+            <link rel="icon" href="../asset/HeaderIcon.svg" type="svg">
+    </head>
+    <body>
+        <!--  Header  -->
+
+        <div class="header_container poppins bold">
+            
+            <div class="header_macera green bold">
+                <h1>MACERA</h1>
+            </div>
+
+            <div class="header_navbar gray">
+                <ul class="navbar_list">
+                    <a href="/index.html">
+                        <lo class="home">Home</lo>
+                    </a>
+                    <a href="trips.html">
+                        <lo class="trips white">Trips</lo>
+                    </a>
+                    <a href="hotelMain.html">
+                        <lo class="hotels gray">Hotels</lo>
+                    </a>
+                    <a href="shareXperienceTrips.html">
+                        <lo class="shareX gray">ShareXperience</lo>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="header_signin bold">
+                <div class="center_customer">
+                    <a href="customerService.html">
+                        <img src="../asset/CSIcon.svg" alt="customer service">
+                    </a>
+                </div>
+                <div class="sign_in_container" onclick="toLogin()">
+                    <div class="sign_in">
+                        <a href="signIn.html">
+                            Sign In
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- title and sub title   -->
+
+        <div class="title_container inter bold white" id="blackout">
+            <div class="title">
+                <span>
+                    Review Your Trips
+                </span>
+                
+            </div>
+            <div class="sub_title">
+                <span>
+                    Destinations
+                </span>
+                
+            </div>
+        </div>
+
+         <!-- main container   -->
+        <div class="main_container inter" id="blackout">
+            <div class="sub_left white ">
+                <div class="left_up">
+                    <div class="labuan_background">
+
+                    </div>
+                    <div class="labuan_info">
+                        <div class="info_up">
+                            <span class="labuan_title bold">
+                                Labuan Bajo
+                            </span>
+                            <span class="labuan_content">
+                                Apr 29 - Apr 30 2023 <br>
+                                7 Person <br>
+                                4.5/5 (1244 reviews)
+                            </span>
+                        </div>
+                        <div class="info_down">
+                            <div class="down_up">
+                                <span class="batik_title bold">
+                                    Batik Air
+                                </span>
+                                <span class="batik_content">
+                                    14.40 - 18.25
+                                </span>
+                            </div>
+                            
+                            <div class="down_down">
+                                <span class="batik_title bold">
+                                    Plataran Komodo Beach Resort
+                                </span>
+                                <span class="batik_content">
+                                    3 deluxe Rooms
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_down">
+                    <div class="important_info bold">
+                        Important Information
+                    </div>
+                    <div class="info_detail">
+                        <ul>
+                            <li>Review your trip details to make sure the dates and times are correct.</li>
+                            <li>We understand that sometimes plans change. We do not charge a cancel or change fee. When the airline charges such fees in accordance with its own pol</li>
+                            <li>Tickets are refundable with a penalty fee of $180 for itinerary cancellations.</li>
+                            <li>Federal law forbids the carriage of hazardous materials aboard aircraft in your luggage or on your person.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_right">
+                <div class="price_cover">
+                    <div class="price_title white bold">
+                        Price Details
+                    </div>
+                    <div class="price_center white">
+                        <div class="price_paynow">
+                            <div class="center_up">
+                                Pay Now
+                            </div>
+                            <div class="center_price">
+                                $975.00
+                            </div>
+                        </div>
+                        <div class="price_total">
+                            <div class="center_down">
+                                <span>
+                                    Total
+                                </span>
+                            </div>
+                            <div class="price_total">
+                                    $975.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_button">
+                        <button class="payment green" onclick="showDetail()" id="myButton">
+                            <span class="final_payment bold">
+                                Next: Final Payment
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    payment    -->
+
+        <div class="payment_container hidden" id="popOut1">
+            <div class="payment_up bold">
+                <div class="up_left inter">
+                    Payment Details
+                </div>
+            </div>
+            <div class="payment_mid inter bold">
+                <div class="payment_method">
+                    <div class="debit white">
+                        <span>
+                            Debit/Credit card
+                        </span>
+                    </div>
+                    <div class="paypal">
+                        <span>
+                            Paypal
+                        </span>
+                    </div>
+                    <div class="qris">
+                        <span>
+                            QRIS 
+                        </span>       
+                    </div>
+                    <div class="ewallet">
+                        <span>
+                            E-Wallet
+                        </span>
+                    </div>
+                </div>
+                <div class="payment_input">
+                    <div class="input1">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="input1">
+                        <label for="card">Debit/Card Number</label>
+                        <input type="text" id="card">
+                    </div>
+                    <div class="input2">
+                        <div class="input_date">
+                            <label for="date">Exp Date</label>
+                            <div class="date_split">
+                                <input type="text" name="" id="date1" placeholder="MM">
+                                <input type="text" name="" id="date" placeholder="YY">
+                            </div>
+                        </div>
+                        <div class="input_code">
+                            <label for="code" class="security">Security Code</label>
+                            <input type="text" id="code" placeholder="XXXX">
+                        </div>
+                    </div>
+                </div>
+                <div class="payment_important_information">
+                    <div class="info">
+                        <span>Important Information</span>
+                        <ul>
+                            <li>Please note that additional charges, such as room service, dining, and other incidental expenses, will be billed to your room and settled upon check-out. These charges are subject to applicable taxes and service fees.</li>
+                            <li>In the event of cancellation or modification of your reservation, please refer to our cancellation policy for applicable terms and conditions. Kindly note that cancellations made within the specified period may be subject to penalties."</li>
+                        </ul>
+                    </div>
+                    <div class="sub_total">
+                        <div class="center">
+                            <div class="center_left">
+                                <span>
+                                    subtotal
+                                </span>
+                               
+                            </div>
+                            <div class="center_right">
+                                <span>
+                                    $975.00
+                                </span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="center center1">
+                            <div class="center_left">
+                                <span>
+                                    subtotal
+                                </span>
+                            </div>
+                            <div class="center_right">
+                                <span>
+                                    $975.00
+                                </span>
+                               
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <div class="center_left">
+                                
+                            </div>
+                            <div class="center_right">
+                                <span>
+                                    $975.00
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment_down">
+                <button class="pay inter bold" id="myButton1" onclick="donePay(); hideDetail()">
+                    <span>
+                        Make Payment
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <script src="../javascript/tripsLayout.js"></script>
+
+    </body>
+</html>

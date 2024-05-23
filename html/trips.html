@@ -1,0 +1,455 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antipasto+Pro">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styleTrips.css" type="text/css">
+        <title>Macera</title>
+        <link rel="icon" href="../asset/HeaderIcon.svg" type="svg">
+    </head>
+    <body>
+        <!--  Header  -->
+
+        <div class="header_container poppins bold">
+            
+            <div class="header_macera green bold">
+                <h1>MACERA</h1>
+            </div>
+
+            <div class="header_navbar gray">
+                <ul class="navbar_list">
+                    <a href="/index.html">
+                        <lo class="home">Home</lo>
+                    </a>
+                    <a href="trips.html">
+                        <lo class="trips white">Trips</lo>
+                    </a>
+                    <a href="hotelMain.html">
+                        <lo class="hotels gray">Hotels</lo>
+                    </a>
+                    <a href="shareXperienceTrips.html">
+                        <lo class="shareX gray">ShareXperience</lo>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="header_signin bold">
+                <div class="center_customer">
+                    <a href="customerService.html">
+                        <img src="../asset/CSIcon.svg" alt="customer service">
+                    </a>
+                </div>
+                <div class="sign_in_container" onclick="toLogin()">
+                    <div class="sign_in">
+                        <a href="signIn.html">
+                            Sign In
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--  enjoy trips  -->
+
+        <div class="enjoy_container inter">
+            <div class="enjoy_left">
+                <div class="enjoy_title bold">
+                    <span class="life_short gray">
+                        Life Is Too Short For A Wide And Beautiful World
+                    </span>
+                    <span class="enjoy_trips white">
+                        Enjoy You Trip With <br>
+                        Heavenly Experience You've <br>
+                        Never Had
+                    </span>
+                </div>
+            </div>
+            <div class="enjoy_right">
+                <img src="../asset/bannerTrips.png" alt="">
+            </div>
+        </div>
+
+         <!--  Input  -->
+
+         <div class="input_container inter">
+            <div class="input_top green">
+                <div class="input_left">
+                    <select id="destination" name="destination" required>
+                        <option value="Select Location">Select Location</option>
+                        <option value="Sumatera Utara">Sumatera Utara</option>
+                        <option value="Sumatera Barat">Sumatera Barat</option>
+                        <option value="Sumatera Selatan">Sumatera Selatan</option>
+                        <option value="Jawa Barat">Jawa Barat</option>
+                        <option value="Jawa Tengah">Jawa Tengah</option>
+                        <option value="Jawa Timur">Jawa Timur</option>
+                        <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                        <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                        <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                        <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                        <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Ambon">Ambon</option>
+                        <option value="Papua Barat">Papua Barat</option>
+                    </select>
+                </div>
+                <div class="input_mid">
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="input_right">
+                    <label for="guests">Passenger</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+            </div>
+                <div class="input_bottom">
+                    <a href="tripsDetail.html">
+                        <button class="search">
+                            <span class="search_text bold">
+                                Search
+                            </span>
+                        </button>
+                    </a>    
+                </div>
+            </div>
+         </div>
+
+        <!--  most visited  -->
+
+        <div class="visited_container inter">
+            <div class="visited_title">
+                <span class="bold green">
+                    Most Visited <span class="italic">Places</span> This Month
+                </span>
+            </div>
+            <div class="visited_content inter">
+                <div class="visited_split">
+                    <div class="container_spot">
+                        <div class="spot_img"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Beach
+                                    </span>
+                                </div>
+                                <img src="../asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Labuan Bajo
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="hotelAround.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" data-place="labuan-bajo" onclick="showAbout(this)">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_spot">
+                        <div class="raja-ampat"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Island
+                                    </span>
+                                </div>
+                                <img src="../asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Raja Ampat
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="hotelAround.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" data-place="raja-ampat" onclick="showAbout(this)">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_spot">
+                        <div class="tual"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        City
+                                    </span>
+                                </div>
+                                <img src="../asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Tual
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="hotelAround.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" data-place="tual" onclick="showAbout(this)">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visited_split">
+                    <div class="container_spot">
+                        <div class="sentani"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Lake
+                                    </span>
+                                </div>
+                                <img src="../asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Danau Sentani
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="hotelAround.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" data-place="danau-sentani" onclick="showAbout(this)">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_spot">
+                        <div class="nusa-penida"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        island
+                                    </span>
+                                </div>
+                                <img src="../asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Nusa Penida
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="hotelAround.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" id="myButton" data-place="nusa-penida" onclick="showAbout(this)">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_spot">
+                        <div class="mereseHills"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Hills
+                                    </span>
+                                </div>
+                                <img src="../asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Merese Hills
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="hotelAround.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                    
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" data-place="merese-hills" onclick="showAbout(this)">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_container">
+            <div class="footer_subcontainer1">
+                <div class="footer_macera bold green poppins">
+                    MACERA
+                </div>
+                <div class="footer_content white inter">
+                    At Macera, we are passionate about making your travel dreams come true. Our mission is to provide exceptional travel experiences that are personalized, enriching, and unforgettable. Join us on a journey to explore the world's most beautiful places and create memories that will last a lifetime. 
+                </div>
+            </div>
+            <div class="footer_subcontainer2 inter">
+                <div class="footer_subcontainer2_up">
+                    <div class="footer_info">
+                        <span class="info white bold">INFO</span><br>
+                        <span class="info_down white">
+                            PRODUCT <br>
+                            PRICING <br>
+                            BLOG
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">CONTACT</span><br>
+                        <span class="info_down white">
+                            VISIT <br>
+                            CALL <br>
+                            EMAIL
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">SUPPORT</span><br>
+                        <span class="info_down white">
+                            HELP <br>
+                            STATUS <br>
+                            FAQ
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">NEWS</span><br>
+                        <span class="info_down white">
+                            EMAIL <br>
+                            LINKEDIN <br>
+                            TWITTER
+                        </span>
+                    </div>
+                </div>
+                <div class="footer_subcontainer2_down">
+                    <img src="../asset/FooterCopyright.svg" alt="copyright">
+                </div>
+            </div>
+         </div>
+
+        <!--  book now detail  -->
+
+        <div class="book_detail_container hidden1" id="popOut1">
+                <div class="center_down">
+                    <a href="trips_detail.html">
+                    </a>
+                </div>
+        </div>
+
+        <!--  about this area  -->
+        
+        <div class="about_area_container hidden1" id="popOut2" onclick="hiddenAbout()">
+            <div class="about_left"></div>
+            <div class="about_right inter white">
+                <div class="about_title">
+                    <span class="title_up">About This Area</span><br>
+                    <span class="title_down bold">Labuan Bajo</span>
+                </div>
+                <div class="about_content">
+                    <span>
+                        Labuan Bajo, located on the western tip of Flores Island, Indonesia, is the gateway to the stunning Komodo National Park, home to the world-famous Komodo dragons. This charming fishing town is surrounded by crystal-clear waters, vibrant coral reefs, and dramatic landscapes, making it a paradise for divers, snorkelers, and adventure seekers. Visitors can explore nearby islands, such as Padar and Rinca, hike to breathtaking viewpoints, and relax on pristine beaches. Labuan Bajo also offers a variety of accommodation and dining options, ensuring a comfortable and memorable stay for every traveler.
+                    </span>
+                </div>
+                <div class="about_detail">
+                    <div class="about_split">
+                        <div class="what_nearby">
+                            <span class="nearby bold">What's Nearby</span><br>
+                            <span class="komodo_island">
+                                Komodo Island - 13 min drive<br>
+                                Padar Island - 20 min drive<br>
+                                Meruorah Resort - 19 min drive<br>
+                                Komodo Island - 23 min drive<br>
+                                AYANA Komodo resort - 15 min drive<br>
+                                Taka Makassar Island - 10 min drive
+                            </span>
+                        </div>
+                    </div>
+                    <div class="about_split">
+                        <div class="what_nearby">
+                            <span class="nearby bold">Restaurant</span><br>
+                            <span class="restaurant">
+                                The Lounge at Plataran<br>
+                                Waecicu Beach Inn Restaurant<br>
+                                Atlantis on the Rock<br>
+                            </span>
+                            <span class="nearby bold">Getting Around</span><br>
+                            <span class="getting_around">
+                                Komodo International Airport (IATA) - 20 min drive
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <script src="../javascript/traffic.js"></script>
+        <script src="../javascript/tripsLayout.js"></script>
+    </body>
+</html>

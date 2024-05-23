@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("../asset/SignBackground.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.bold{
+    font-weight: 1000;
+}
+.poppins{
+    font-family: 'Poppins',sans-serif;
+}
+.inter{
+    font-family: 'Inter',sans-serif;
+}
+.white{
+    color: white;
+}
+.green{
+    color: #00EAC7;
+    ;
+}
+
+
+
+.main_container{
+    display: flex;
+    height: 90vh;
+    width: 70vw;
+    flex-direction: column;
+}
+    .title{
+        text-align: center;
+        font-size: 4vw;
+        margin-bottom: 2vh;
+        margin-top: 10vh;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        line-height: 100%;
+    }
+    .content{
+        text-align: center;
+        font-size: 1vw;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+        input{
+            background-color: transparent;
+            border: none;
+            width: 30vw;
+            margin-top: 4vh;
+            color: white;
+            box-sizing: border-box;
+            height: 5vh;
+            --width-of-input: 30vw;
+            --border-height: 1px;
+            --border-before-color: rgba(221, 221, 221, 0.39);
+            --border-after-color: #00EAC7;
+            --input-hovered-color: #00EAC7;
+            width: var(--width-of-input);
+            position: relative;
+            border-bottom: var(--border-height) solid var(--border-before-color);
+        }
+        .input-border {
+            position:fixed;
+            background: var(--border-after-color);
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s;
+        }
+        input:valid {
+            outline: none;
+        }
+        .quick_login{
+            display: flex;
+            margin-top: 4vh;
+            justify-content: center;
+        }
+            .google_container,.facebook_container,.microsoft_container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0.1vw;
+                border: 0.1vw solid #00EAC7;
+                border-radius: 3vh;
+                margin-left: 0.3vw;
+                margin-right: 0.3vw;
+                cursor: pointer;
+            }
+            .google_container:hover,.facebook_container:hover,.microsoft_container:hover{
+                background-color: #102729;
+            }
+            img{
+                width: 1.5vw;
+                height: 1.5vw;
+                margin-top: 0.8vw;
+                margin-bottom: 0.8vw;
+                margin-left: 1.5vw;
+                margin-right: 1.5vw;
+            }
+        .dont_have_acc{
+            text-align: center;
+            font-size: 1vw;
+            color: #ADADAD;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+        .button_signin{
+            display: flex;
+            justify-content: center;
+        }
+            .button{
+                display: flex;
+                background-color: transparent;
+                border: 0.1vw solid #00EAC7;
+                color: white;
+                font-weight: 600;
+                border-radius: 2vw;
+                cursor: pointer;
+            }
+            .button:hover{
+                background-color: #00EAC7;
+                color: black;
+            }
+                .label_signin{
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
+                    margin-left: 6vw;
+                    margin-right: 6vw;
+                    font-size: 1.2vw;
+                }

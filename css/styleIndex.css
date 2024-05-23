@@ -1,0 +1,444 @@
+/* global element */
+body{
+    background-color: #111B24;
+}
+.bold{
+    font-weight: 1000;
+}
+.poppins{
+    font-family: 'Poppins',sans-serif;
+}
+.inter{
+    font-family: 'Inter',sans-serif;
+}
+.white{
+    color: white;
+}
+.green{
+    color: #00EAC7;
+}
+.gray{
+    color: #727272E5;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'Ravensara Antiqua';
+    src: url(../fonts/RavensaraAntiquaStencil-Bold.ttf);
+}
+
+
+
+/* header */
+.header_container{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    
+    height: 15vh;
+    background-color: #111B24;
+
+    z-index: 10;
+}
+    .header_macera{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        flex-basis: 20%;
+        margin-left: 4vw;
+        margin-top: vw;
+        font-family: 'Ravensara Antiqua', sans-serif ;
+        font-weight: bolder;
+        font-size: 30px;
+        color: #00EAC7;
+    }
+    .header_navbar{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+        justify-content: center;
+        
+        text-align: center;
+        
+    }
+        .navbar_list{
+            display: flex;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .home,.trips,.hotels,.shareX{
+            margin-left: 3vw;
+            margin-right: 3vw;
+            font-size: 1.6vw;
+            text-align: center;
+            font-weight: 700;
+            font-family: 'Poppins'
+        }
+            .home{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .trips{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .hotels{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .shareX{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+    .header_signin{
+        display: flex;
+        justify-content: center;
+        flex-basis: 25%;
+    }
+        .center_customer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 30%;
+        }
+            .header_signin img{
+                width: 5vw;
+                height: 5vh;
+            }
+        .sign_in_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #00EAC7;
+            flex-basis: 70%;
+            cursor: pointer;
+           
+            margin-top: 4vh;
+            margin-bottom: 4.5vh;
+            margin-right: 4vw;
+            border-radius: 1vw;
+        }
+            .sign_in{
+                font-size: 1.6vw;
+            }
+/*   title and banner   */
+.title_container{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin-top: 22vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-size: 3.2vw;
+    font-weight: 900;
+}
+    .first_title{
+        display: flex;
+        
+        flex-basis: 5%;
+    }
+    .second_title{
+        display: flex;
+        
+        flex-basis: 10%;
+    }
+    .banner{
+        flex-basis: 80%;
+        background-image: url("../asset/HomeBanner.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 5vh;
+        border-radius: 2.5vw;
+    }
+
+/*  Brand   */
+
+.brand_container{
+    display: flex;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+    .brand1,.brand2,.brand3,.brand4,.brand5{
+        display: flex;
+        flex-basis: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+    .brand_container img{
+        width: 15vw;
+        height: 15vh;
+    }
+
+/*  why should be */
+
+.why_container{
+    display: flex;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+    .why_left{
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        font-size: 2vw;
+        margin-right: 2vw;
+        font-weight: 550;
+    }
+        .title_why{
+            flex-basis: 20%;
+        }
+        .content_why{
+            flex-basis: 80%;
+            margin-top: 2vh;
+            font-weight: 500;
+        }
+    .why_right{
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5vw;
+        text-align: justify;
+    }
+        .lorem_why{
+            font-size: 1.5vw;
+        }
+
+/*  3 rare experience */
+
+.rare3_container{
+    display: flex;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 12vh;
+    margin-bottom: 10vh;
+    text-align: justify;
+}
+    .rare3_left,.rare3_middle,.rare3_right{
+        display: flex;
+        flex-basis: 35%;
+        flex-direction: column;
+    }
+    .rare3_middle{
+        display: flex;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+        .rare3_left_center,.rare3_middle_center,.rare3_right_center{
+            flex-basis: 100%;
+            font-size: 1vw;
+            display: flex;
+            flex-direction: column;
+            margin-right: 2vw;
+        }
+        .rare3_title{
+            font-size: 1.5vw;
+        }
+
+
+/*  save banner */
+
+.save_container{
+    display: flex;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 12vh;
+    margin-bottom: 10vh;
+    flex-direction: column-reverse;
+    height: 65vh;
+
+    background-image: url("../asset/DiscountBanner.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 1.3vw;
+}
+    .save_title{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8vh;
+        margin-left: 2vw;
+    }
+        .save_content,.save_button{
+            display: flex;
+            flex-direction: column;
+        }
+        .save_content{
+            flex-basis: 70%;
+            margin-bottom: 4vh;
+        }
+        .save_button{
+            flex-basis: 30%;
+            background-color: #00EAC7;
+            margin-right: 75vw;
+            border-radius: 1vw;
+            
+        }
+        .save_button:hover{
+            background-color: transparent;
+            color: #00EAC7;
+            border: 0.1vw solid #00EAC7;
+        }
+            .you_can_save{
+                font-size: 3vw;
+                font-weight: bold;
+            }
+            .lets_take{
+                font-size: 2vw;
+            }
+            .book_now{
+                font-size: 1.8vw;
+                margin: 0.5vw;
+                text-align: center;
+            }
+
+/*  Travel list   */
+
+.travel_tips_container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+    .tips_title{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .tips_center{
+        display: flex;
+        flex-direction: row;
+    }
+        .tips_banner1,.tips_banner2{
+            display: flex;
+            flex-basis: 50%;
+            flex-direction: column-reverse;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            height: 40vh;
+            margin-top: 8vh;
+            border-radius: 1vw;
+        }
+        .tips_banner1{
+            background-image: url("../asset/Tips1Banner.svg");
+            margin-right: 2.5vw;
+        }
+        .tips_banner2{
+            background-image: url("../asset/Tips2Banner.svg");
+            margin-left: 2.5vw;
+        }
+            .banner_text{
+                order: 1;
+                margin-left: 2vw;
+                margin-bottom: 2vh;
+                line-height: 1.4;
+            }
+                .things_you{
+                    font-size: 2vw;
+                }
+                .share_fav{
+                    font-size: 1.3vw;
+                }
+        .banner_button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00EAC7;
+            margin-right: 30vw;
+            margin-left: 2vw;
+            margin-bottom: 5vh;
+            border-radius: 1vw;
+        }
+        .banner_button:hover{
+            background-color: transparent;
+            color: #00EAC7;
+            border: 0.1vw solid #00EAC7;
+        }
+            .read_on{
+                margin-left: 0.1vw;
+                margin-right: 0.1vw;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                font-size: 1.3vw;
+            }
+
+/*  Footer  */
+.footer_container{
+    display: flex;
+    margin-top: 10vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 10vh;
+}
+    .footer_subcontainer1,.footer_subcontainer2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer_subcontainer1{
+        flex-basis: 40%;
+        text-align: start;
+        margin-right: 5vw;
+    }
+        .footer_macera{
+            font-size: 5vw;
+            font-family: 'Ravensara Antiqua',sans-serifs;
+            margin-bottom: 1.8vw;
+        }
+        .footer_content{
+            font-size: 1.3vw;
+            text-align: justify;
+        }
+    .footer_subcontainer2{
+        flex-basis: 60%;
+    }
+        .footer_subcontainer2_up{
+            display: flex;
+            flex-direction: row;
+        }
+            .footer_info{
+                display: flex;
+                flex-direction: column;
+                line-height: 1;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                flex-basis: 25%;
+                margin-top: 5vh;
+            }
+                .info{
+                    font-size: 1.5vw;
+                }
+                .info_down{
+                    font-size: 1.1vw;
+                    line-height: 2;
+                    font-weight: lighter;
+                }
+
+        .footer_subcontainer2_down{
+            display: flex;
+            margin-left: 2vw;
+        }
+            img[alt="copyright"]{
+                width: 25vw;
+                height: 2vw;
+                margin-top: 1.8vw;
+            }

@@ -1,0 +1,282 @@
+/* global element */
+body{
+    background-color: #111B24;
+}
+.bold{
+    font-weight: 1000;
+}
+.poppins{
+    font-family: 'Poppins',sans-serif;
+}
+.inter{
+    font-family: 'Inter',sans-serif;
+}
+.white{
+    color: white;
+}
+.green{
+    color: #00EAC7;
+    ;
+}
+.gray{
+    color: #727272E5;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@font-face {
+    font-family: 'Ravensara Antiqua';
+    src: url(../fonts/RavensaraAntiquaStencil-Bold.ttf);
+}
+
+
+
+/* header */
+.header_container{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    
+    height: 15vh;
+    background-color: #111B24;
+
+    z-index: 10;
+}
+    .header_macera{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        flex-basis: 20%;
+        margin-left: 4vw;
+        margin-top: vw;
+        font-family: 'Ravensara Antiqua', sans-serif ;
+        font-weight: bolder;
+        font-size: 30px;
+        color: #00EAC7;
+    }
+    .header_navbar{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+        justify-content: center;
+
+        text-align: center;
+        
+    }
+        .navbar_list{
+            display: flex;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .home,.trips,.hotels,.shareX{
+            margin-left: 3vw;
+            margin-right: 3vw;
+            font-size: 1.6vw;
+            text-align: center;
+        }
+            .home{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .trips{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .hotels{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+            .shareX{
+                flex-basis: 25%;
+                flex-grow: 0;
+            }
+    .header_signin{
+        display: flex;
+        justify-content: center;
+        flex-basis: 25%;
+    }
+        .center_customer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 30%;
+        }
+            .header_signin img{
+                width: 5vw;
+                height: 5vh;
+            }
+        .sign_in_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #00EAC7;
+            flex-basis: 70%;
+            cursor: pointer;
+           
+            margin-top: 4vh;
+            margin-bottom: 4.5vh;
+            margin-right: 4vw;
+            border-radius: 1vw;
+        }
+            .sign_in{
+                font-size: 1.6vw;
+            }
+
+/*  main container  */
+
+.title{
+    display: flex;
+    margin-top: 20vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+    .title_left,.title_right{
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+    }
+    .title_left{
+        justify-content: start;
+    }
+        .title_left span{
+            font-size: 3.5vw;
+        }
+    .title_right{
+        justify-content: end;
+    }
+        .title_right img{
+            width: 4vw;
+            height: 4vh;
+        }
+        .title_right span{
+            font-size: 1.8vw;
+        }
+
+.container {
+    margin-top: 5vh;
+    margin-left: 4vw;
+    margin-right: 0vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+    cursor: grab;
+    height: 110vh;
+    display: flex;
+    padding: 0px;
+  }
+   
+  .container::-webkit-scrollbar {
+    width: 1px; /* Optional: Customize the width of the scrollbar */
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: #0F3236; /* Optional: Customize the color of the scrollbar thumb */
+  }
+  
+  .container::-webkit-scrollbar-thumb:hover {
+    background-color: #00EAC7; /* Optional: Customize the color of the scrollbar thumb on hover */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+    .content_up,.content_down{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+    }
+        .element{
+            display: flex;
+            background-color: black;
+            width: 33vw;
+            height: 50vh;
+            margin: 10px;
+            border-radius: 2vw;
+            flex-direction: column;
+        }
+
+        .element1,.element2,.element3,.element4,.element5,.element6,.element7,.element8{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .element1{
+            background-image: url(../asset/LabuanBajo.svg)
+        }
+        .element2{
+            background-image: url(../asset/PinkBeach.svg);
+        }
+        .element3{
+            background-image: url(../asset/KomodoPark.svg);
+        }
+        .element4{
+            background-image: url(../asset/MawiBeach.svg);
+        }
+        .element5{
+            background-image: url(../asset/WaeRebo.svg);
+        }
+        .element6{
+            background-image: url(../asset/GiliIsland.svg);
+        }
+        .element7{
+            background-image: url(../asset/SadeVillage.svg);
+        }
+        .element8{
+            background-image: url(../asset/SindangGila.svg);
+        }
+        
+            .element_up,.element_down{
+                display: flex;
+                flex-basis: 50%;
+                margin-left: 2vw;
+            }
+            .element_up{
+                margin-top: 3vh;
+                margin-bottom: 30vh;
+            }
+                .element_price{
+                    display: flex;
+                    background-color: #0F3236;
+                    align-items: center;
+                    border-radius: 2vw;
+                }
+                    .element_price span{
+                        margin-left: 2vw;
+                        margin-right: 2vw;
+                        font-size: 1.5vw;
+                    }
+            .element_down{
+                flex-direction: column-reverse;
+                margin-bottom: 3vh;
+            }
+                .down_down{
+                    display: flex;
+                    flex-direction: row;
+                }
+                    .labuan_bajo,.down_right{
+                        display: flex;
+                        align-items: center;
+                        flex-basis: 50%;
+                    }
+                        .labuan_bajo{
+                            font-size: 2.5vw;
+                        }
+                        .down_right{
+                            display: flex;
+                            flex-direction: row-reverse;
+                            cursor: pointer;
+                        }
+                            .down_right img{
+                                width: 8vw;
+                                height: 8vh;
+                            }
+
+  
